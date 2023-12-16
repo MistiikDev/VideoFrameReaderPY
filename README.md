@@ -1,8 +1,14 @@
 # VideoFrameReaderPY
 Extracts a video's frame incrementally. Commonly used for Gimmick accs on Twitter
 
-# Propreties
+# Importing the module
+```py
+## Works as a module, so you can call 
+from {whatever_you_called_the_file} import VideoFrameUtil
 ```
+
+# Propreties
+```py
 self.cap = cv2.VideoCapture(self.video_path) ## USE THIS ONE IF YOU KNOW WHAT YOU ARE DOING
        
 self.current_frame = 0
@@ -57,4 +63,3 @@ while True:
 ## Its important to close the reader whenever you are done, to save memory and keep it clean.
 VideoReader.Close() 
 ```
-
